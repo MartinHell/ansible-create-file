@@ -1,0 +1,15 @@
+---
+
+# First create a directory
+- name: Create the /tmp/my_first_directory
+  file:
+    path: /tmp/my_first_directory
+    state: directory
+    mode: 0755
+
+# Next create a file in the directory
+- name: Create a file in /tmp/my_first_directory
+  file:
+    path: /tmp/my_first_directory/my_first_file
+    state: touch
+    mode: 0644
