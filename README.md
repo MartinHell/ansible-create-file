@@ -10,7 +10,8 @@
 * Escalate privileges
 
 ```bash
-sudo -i```
+sudo -i
+```
 
 * Check that the ansible server can connect to the webserver
 
@@ -23,18 +24,21 @@ ssh ubuntu@<ip of webserver>
 * Change to the ansible directory
 
 ```bash
-cd /etc/ansible```
+cd /etc/ansible
+```
 
 * Edit the hosts file using your preferred text editor
 
 ```bash
-vim hosts```
+vim hosts
+```
 
 * Add the following text to the hosts file
 
 ```
 [web]
-web01```
+web01
+```
 
 * Create a host_vars file for web01
 
